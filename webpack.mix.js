@@ -32,6 +32,8 @@ mix
   })
   .options({ processCssUrls: false });
 
+  mix.copyDirectory('src/images', 'public/images');
+
 if (mix.inProduction()) {
   mix.webpackConfig({
     plugins: [
