@@ -7,11 +7,12 @@
 
 ## Libs used in this project
 * [Sass](https://sass-lang.com/)
-* [Laravel-mix-purgeCss](https://jquery.com/)
+* [Laravel-mix-purgeCss](https://laravel-mix.com/extensions/purgecss)
 
 ## Importing Images 
-> All images used at public/*.html are imported from public/imgs folder
-> All images used at src/*.scss files are imported from src/images folder >> which will be compiled to public/images 
+> Note: All images used at public/*.html are imported from public/imgs folder
+
+> Note: All images used at src/*.scss files are imported from src/images folder >> which will be compiled to public/images 
 
 ## Usage
 > First step you should install dependencies using `npm install` command.
