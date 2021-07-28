@@ -102,10 +102,6 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-img {
-  vertical-align: middle;
-}
-
 button {
   border-radius: 0;
 }
