@@ -4,6 +4,10 @@
 
 ## Plugins Usage In This Scaffolding
 * [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+
+## Libs used in this project
+* [Sass](https://sass-lang.com/)
+* [Laravel-mix-purgeCss](https://jquery.com/)
 ## Usage
 > First step you should install dependencies using `npm install` command.
 ```bash
