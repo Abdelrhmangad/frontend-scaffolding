@@ -1,7 +1,6 @@
-const mix = require('laravel-mix');
-const WebpackRTLPlugin = require('webpack-rtl-plugin');
-
-
+const mix = require("laravel-mix");
+const WebpackRTLPlugin = require("webpack-rtl-plugin");
+require("laravel-mix-purgecss");
 /*
  |--------------------------------------------------------------------------
  | Public Path
@@ -10,7 +9,7 @@ const WebpackRTLPlugin = require('webpack-rtl-plugin');
  | The font files and background images will copy to public path.
  |
  */
-mix.setPublicPath('./public');
+mix.setPublicPath("./public");
 
 /*
  |--------------------------------------------------------------------------
@@ -22,8 +21,15 @@ mix.setPublicPath('./public');
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.js('src/js/app.js', 'public/js')
-  .sass('src/sass/app.scss', 'public/css')
+mix
+  .js("src/js/app.js", "public/js")
+  .sass("src/sass/app.scss", "public/css")
+  .purgeCss({
+    enabled: true,
+    content: ["./public/index.html", "./public/pages/*.html"],
+    css: ["./public/css/app.css", "./public/css/app.css"],
+  })
+  .options({ processCssUrls: false });
 
 if (mix.inProduction()) {
   mix.webpackConfig({
