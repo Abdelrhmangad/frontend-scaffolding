@@ -27,6 +27,7 @@ mix
   .purgeCss({
     enabled: true,
     content: ["./public/index.html", "./public/pages/*.html"],
+    extensions: ["html", "js"],
     css: ["./public/css/app.css", "./public/css/app.css"],
   })
   .options({ processCssUrls: false });
